@@ -11,10 +11,31 @@
 
     <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
     <link rel="stylesheet" href="{{rootURL}}assets/my-social-sentiment-ember-frontend.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
 
     {{content-for "head-footer"}}
   </head>
   <body class="container-fluid">
+
+    <!-- START NAV -->
+    <ul id="slide-out" class="side-nav">
+      <li>
+        <div class="userView">
+          <div>
+            <img class="navbar-image" alt="people" src="assets/images/colorful-people.png">
+          </div>
+        </div>
+      </li>
+      <li><a class="waves-effect waves-light login-btn"><i class="small material-icons blue-text text-darken-4">account_box</i>Login with Facebook</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="waves-effect waves-light logout-btn"><i class="small material-icons blue-text text-darken-4">account_box</i>Log Out</a></li>
+      <!-- <li><a href="#!">Second Link</a></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
+    </ul>
+    <a data-activates="slide-out" class="button-collapse show-on-large"><i class="medium material-icons blue-grey-text">menu</i></a>
+    <!-- END NAV -->
+
     {{content-for "body"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>
